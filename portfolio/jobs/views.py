@@ -6,4 +6,5 @@ def nick(request):
     return render(request, 'jobs/home.html')
 
 def homepage(request):
-    return render(request, 'jobs/home.html')
+    jobs = Job.objects
+    return render(request, 'jobs/home.html', {'jobs': jobs})
