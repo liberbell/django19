@@ -6,3 +6,6 @@ class Job(models.Model):
     image = models.ImageField(upload_to='images/')
     # Summary
     summary = models.CharField(max_length=200)
+
+    def ___str___(self):
+        return self.summary
