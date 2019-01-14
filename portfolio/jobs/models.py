@@ -7,5 +7,5 @@ class Job(models.Model):
     # Summary
     summary = models.CharField(max_length=200)
 
-    def ___str___(self):
+    def __str__(self):
         return self.summary
