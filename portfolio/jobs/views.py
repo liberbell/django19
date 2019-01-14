@@ -11,5 +11,5 @@ def homepage(request):
 
 def detail(request, job_id):
     # print(job_id)
-    job_detail = get_object_or_404(job, pk=job_id)
+    job_detail = get_object_or_404(jobs, pk=job_id)
     return render(request, 'jobs/detail.html', {'job':job_detail})
