@@ -33,7 +33,7 @@
     <div class="container">
       <h1 class="jumbotron-heading">Job Detail</h1>
       <p class="lead text-muted">{{ job.summary }}</p>
-      <img src="{% static 'illust_snoopy-1-400x338.png' %}" height=300></img>
+      <img src="{{ job.image.url }}" height=300></img>
       <p>
         <a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a>
       </p>
